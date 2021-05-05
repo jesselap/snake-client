@@ -11,6 +11,9 @@ const connect = function () {
   conn.on('connect', () => {
     console.log('Connected!');
     conn.write('Name: JAL')
+    
+  
+   
   });
   conn.on('data', (data) => {
     console.log(data);
